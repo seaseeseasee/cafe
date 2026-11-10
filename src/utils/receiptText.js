@@ -1,0 +1,43 @@
+// ข้อความบนใบเสร็จ (ตั้งค่าภาษาได้ที่หน้าตั้งค่าร้านค้า)
+const TEXT = {
+  th: {
+    receipt: 'ใบเสร็จรับเงิน',
+    order: 'เลขที่',
+    date: 'วันที่',
+    tel: 'โทร',
+    taxId: 'เลขผู้เสียภาษี',
+    subtotal: 'ยอดรวม',
+    discount: 'ส่วนลด',
+    total: 'ยอดสุทธิ',
+    payment: 'ชำระโดย',
+    received: 'รับเงิน',
+    change: 'เงินทอน',
+    items: 'รายการ',
+    voided: '*** ยกเลิกแล้ว ***',
+    copy: 'สำเนา',
+    note: 'หมายเหตุ',
+    ref: 'อ้างอิง',
+    card: 'บัตร',
+  },
+  en: {
+    receipt: 'RECEIPT',
+    order: 'Order',
+    date: 'Date',
+    tel: 'Tel',
+    taxId: 'Tax ID',
+    subtotal: 'Subtotal',
+    discount: 'Discount',
+    total: 'Total',
+    payment: 'Paid by',
+    received: 'Received',
+    change: 'Change',
+    items: 'items',
+    voided: '*** VOIDED ***',
+    copy: 'COPY',
+    note: 'Note',
+    ref: 'Ref',
+    card: 'Card',
+  },
+};
+
+export const receiptText = (lang) => TEXT[lang] || TEXT.th;
